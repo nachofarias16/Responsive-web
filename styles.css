@@ -80,3 +80,48 @@ a::after {
     left: 50%; 
     
 }
+.saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    padding-left: 50px;
+}
+.contactar {
+    background-color: #4070f4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.contactar {
+    background-color: #3060e0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2 span {
+    color: #4070f4;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 30px;
+}
