@@ -80,7 +80,7 @@ a::after {
     left: 50%; 
     
 }
-.saludo {
+.sa {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,12 +118,16 @@ h2 {
 h2 span {
     color: #4070f4;
 }
+h1, h2, h2 span{
+    margin-bottom: 16px;
+}
 
 h3 {
     font-size: 32px;
     font-weight: 600;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    
 }
 .hidden {
     opacity: 0;
