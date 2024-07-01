@@ -15,6 +15,15 @@ body {
 .navbar-section {
     background-color: rgb(252, 252, 252);
     border-bottom: 2px solid rgb(245, 241, 241);
+    transition: transform 0.4s ease-in-out, top 0.4s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-hide {
+    transform: translateY(-100%);
 }
 
 .navbar {
@@ -24,7 +33,6 @@ body {
     padding: 10px 90px;
     height: 40px; 
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
@@ -135,7 +143,7 @@ a::after {
 
 .contactar:hover {
     background-color: #3060e0;
-    transform: scale(1.1    );
+    transform: scale(1.1);
     transition: transform 0.1s ease, background-color 0.3s ease;
 }
 
@@ -160,9 +168,4 @@ h3 {
     font-weight: 600;
     color: #555;
     margin-bottom: 50px;
-}
-
-.hidden {
-    opacity: 0;
-    transition: all 1s;
 }
