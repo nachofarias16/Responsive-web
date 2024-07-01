@@ -20,7 +20,7 @@ button.addEventListener('mousemove', (e) => { //event listener a cuando se mueve
     const rect = button.getBoundingClientRect(); //consigo las dimensiones del boton
     const x = e.clientX - rect.left - rect.width / 2; //calculo posicion x y del boton relativo a su centro
     const y = e.clientY - rect.top - rect.height / 2;
-    button.style.transform = `scale(1.2) translate(${x * 0.3}px, ${y * 0.3}px)`; //cambio el tamaño del boton y lo muevo basado en la pos del mouse
+    button.style.transform = `scale(1.2) translate(${x * 0.1}px, ${y * 0.1}px)`; //cambio el tamaño del boton y lo muevo basado en la pos del mouse
 });
 
 button.addEventListener('mouseleave', () => {  //agrego event listener a cuando el mouse abandona el boton
@@ -55,3 +55,11 @@ window.addEventListener('scroll', () => {
     ticking = true;
   }
 });
+
+
+
+
+
+
+
+
