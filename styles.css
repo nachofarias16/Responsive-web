@@ -3,13 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-section {
+    background-color: rgb(252, 252, 252);
+    border-bottom: 2px solid rgb(245, 241, 241);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 90px;
+    height: 40px; 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin-left: auto;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    padding-top: 23px; 
+    padding-bottom: 6px; 
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    bottom: 0.4px; 
+    width: 0; 
+    height: 2.6px; 
+    background-color: #007BFF; 
+    transition: width 0.4s ease, left 0.2s ease; 
+    transform: translateX(-50%);
+}
+
+.navbar a:hover {
+    color: #201f1f; 
+}
+
+.navbar a:hover::after {
+    width: 90%; 
+    left: 50%; 
 }
 
 a {
@@ -32,61 +89,34 @@ header {
     background-color: rgba(255, 255, 255, 0.808);
     color: red;
 }
+
 footer {
     background-color: rgb(35, 72, 238);
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 634px;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 90px;
-    
-}
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-    margin-left: auto; 
-}
-.navbar a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 5px;
-    font-weight: 600;
-    font-size: 17px;
-    transition: color 0.3s ease;
-}
 a::after {
     content: '';
     position: absolute;
     left: 50%; 
-    bottom: -6px; 
+    bottom: 2px; 
     width: 0; 
-    height: 3px; 
+    height: 2.8px; 
     background-color: #007BFF; 
-    transition: width 0.3s ease, left 0.3s ease; 
+    transition: width 0.4s ease, left 0.4s ease; 
     transform: translateX(-50%);
 }
-.navbar a:hover {
-    color: #201f1f; 
-}
-.navbar a:hover::after {
-    width: 90%; 
-    left: 50%; 
-    
-}
+
 .sa {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
-    padding-left: 50px;
+    height: 60vh;
+    padding-left: 100px;
 }
+
 .contactar {
     background-color: #4070f4;
     color: white;
@@ -96,30 +126,33 @@ a::after {
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.1s ease, background-color 0.4s ease;
     width: fit-content;
+    margin-top: 20px; 
+    position: relative; 
+    will-change: transform;
 }
 
-.contactar {
+.contactar:hover {
     background-color: #3060e0;
+    transform: scale(1.1    );
+    transition: transform 0.1s ease, background-color 0.3s ease;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 16px;
 }
 
 h2 {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 h2 span {
     color: #4070f4;
-}
-h1, h2, h2 span{
-    margin-bottom: 16px;
 }
 
 h3 {
@@ -127,8 +160,8 @@ h3 {
     font-weight: 600;
     color: #555;
     margin-bottom: 50px;
-    
 }
+
 .hidden {
     opacity: 0;
     transition: all 1s;
