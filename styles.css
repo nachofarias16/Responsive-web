@@ -178,7 +178,7 @@ h3 {
     text-align: center;
     border-top: 2px solid #e9ecef;
     position: relative;
-    margin-left: 90px; /* Ajusta esta propiedad según necesites */
+    margin-left: 90px;
 }
 
 .divisor span {
@@ -248,17 +248,50 @@ h3 {
     color: white;
 }
 .lenguajes-herramientas {
-    display: none; /* Oculta la sección por defecto */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 100%; /* Posición inferior respecto al título */
-    left: 0; /* Posición izquierda */
-    background-color: #f8f9fa; /* Color de fondo */
-    padding: 20px; /* Padding */
-    border-radius: 5px; /* Bordes redondeados */
-    list-style: none; /* Quitar viñetas de la lista */
-    margin: 0; /* Quitar margen superior */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    border-radius: 5px; 
+    list-style: none; 
+    margin: 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   h2:hover .lenguajes-herramientas {
-    display: block; /* Muestra la sección al pasar el mouse */
+    display: block; 
   }
+  .video-background {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 40%;
+    height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+.foto {
+    position: absolute; 
+    left: 60%; 
+    top: 9%; 
+    width: 100px; 
+    height: auto; 
+}
+
+.imagen-superior {
+    width: 300px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
