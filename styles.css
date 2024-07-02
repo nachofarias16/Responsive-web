@@ -293,9 +293,9 @@ video {
 .foto {
     position: absolute; 
     left: 60%; 
-    top: 10%; 
+    top: 17%; 
     width: 100px; 
-    height: 90%; 
+    height: 100%; 
 }
 
 .imagen-superior {
@@ -309,6 +309,15 @@ video {
     background-color: #f8f9fa; 
     border-radius: 10px; 
   }
+  .sobre-mi::after {
+    content: '';
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    height: 50%;
+    width: 2px;
+    background-color: #e0e0e0;
+}
   
   .sobre-mi h2 {
     font-size: 48px;
@@ -349,9 +358,11 @@ video {
 
 
 .sobre-mi {
+    user-select: none;
     position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
     width: 90%;
-    height: 400px; /* Ajusta según necesites */
+    height: 500px; 
     margin: 230px auto;
     background-color: #ffffff;
     border-radius: 5px;
@@ -386,6 +397,17 @@ video {
     font-size: 25px;
     margin: 0;
     color: #4070f4;
+    position: relative;
+    display: inline-block;
+}
+.sobre-mi h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #4070f4;
 }
 
 .sobre-mi ul {
@@ -399,7 +421,15 @@ video {
     font-weight: 550;
     color: rgb(39, 38, 38);
     line-height: 24px;
+    transition: transform 0.1s, color 0.2s;
+    border-radius: 5px;
+    padding: 4px 4px;
     
+}
+.sobre-mi li:hover {
+    transform: translateX(5px);
+    color: #4070f4;
+    background-color: #f0f8ff;
 }
 
 .idiomas-container .icon {          
@@ -425,11 +455,11 @@ video {
 
 .conocimientos-container h4 {
     top: 25px;      /* titulo de conocimientos */
-    right: 600px;
+    right: 0px;
 }
 
 .conocimientos-container ul {
-    top: 60px;      /* texto de conocimientos */
+    top: 70px;      /* texto de conocimientos */
     right: 580px;
 }
 
@@ -441,3 +471,14 @@ video {
         margin-right: 0;
     }
 }
+@keyframes fadeIn {
+    from { opacity: 1; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.idiomas-container h4, .conocimientos-container h4 {
+    animation: fadeIn 19s infinite;
+}
+
+.idiomas-container h4 { animation-delay: 1s; }
+.conocimientos-container h4 { animation-delay: 1s; }
