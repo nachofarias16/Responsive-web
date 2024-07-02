@@ -247,6 +247,7 @@ h3 {
     background-color: #007bff;
     color: white;
 }
+/*
   .video-background {
     position: static;
     top: 0;
@@ -290,19 +291,23 @@ video {
   video:hover::after {
     opacity: 0.2; /
   }
+  */
 .foto {
+    display: block;
     position: absolute; 
-    left: 60%; 
-    top: 17%; 
+    left: 50%; 
+    top: 6%; 
     width: 100px; 
     height: 100%; 
+    z-index: -1;  
 }
 
 .imagen-superior {
-    width: 300px; 
+    width: 850px; 
     height: auto; 
     margin-bottom: 20px; 
 }
+
 .sobre-mi {
     margin-top: 240px; 
     padding: 20px;
