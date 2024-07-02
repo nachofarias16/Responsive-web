@@ -318,4 +318,46 @@ video {
     height: auto; 
     margin-bottom: 20px; 
 }
+.sobre-mi {
+    margin-top: 240px; /* Adjust margin as needed */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .sobre-mi h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .sobre-mi p {
+    line-height: 1.6; /* Adjust line spacing as needed */
+    text-align: justify; /* Justify text for better readability */
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .habilidades {
+    display: flex; /* Arrange languages and skills side-by-side */
+    flex-wrap: wrap; /* Wrap items to multiple lines if needed */
+    justify-content: space-between; /* Distribute space evenly */
+    margin-top: 30px;
+  }
+  
+  .habilidades h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4070f4;
+
+  }
+  
+  .habilidades ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .habilidades li {
+    margin-bottom: 10px;
+  }
 
