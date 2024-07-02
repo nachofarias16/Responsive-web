@@ -56,27 +56,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const h3 = document.querySelector('h3');
-    const lenguajes = document.querySelector('.lenguajes-herramientas');
-
-    h3.addEventListener('mouseenter', function() {
-        lenguajes.style.display = 'block';
-    });
-
-    h3.addEventListener('mouseleave', function() {
-        lenguajes.style.display = 'none';
-    });
-
-    lenguajes.addEventListener('mouseenter', function() {
-        this.style.display = 'block';
-    });
-
-    lenguajes.addEventListener('mouseleave', function() {
-        this.style.display = 'none';
-    });
-});
-
 
 
 
